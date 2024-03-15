@@ -1,54 +1,52 @@
 package pratikum;
 public class perpus {
-    public String[][] teknologi = {
-        {"Judul Buku\t\t: How Artificial Intelligence is Transforming Our World", "Pengarang Buku\t\t: Ray Kurzweil", "Jumlah Halaman Buku\t: 300 halaman\n"},
-        {"Judul Buku\t\t: The Fourth Industrial Revolution", "Pengarang Buku\t\t: Klaus Schwab", "Jumlah Halaman Buku\t: 240 halaman\n"},
-        {"Judul Buku\t\t: The Singularity is Near: When Humans Transcend Biology", "Pengarang Buku\t\t: Tom Fawcett", "Jumlah Halaman Buku\t: 500 halaman\n"},
-        {"Judul Buku\t\t: What You Need to Know about Data Mining and Data-Analytic Thinking", "Pengarang Buku\t\t: Foster Provost", "Jumlah Halaman Buku\t: 400 halaman\n"},
-        {"Judul Buku\t\t: How the Technology Behind Bitcoin is Changing Money, Business, and the World", "Pengarang Buku\t\t: Don Tapscott", "Jumlah Halaman Buku\t: 350 halaman\n"}
-    };
-    public String[][] filsafat = {
-        {"Judul Buku\t\t: Meditations", "Pengarang Buku\t\t: Marcus Aurelius", "Jumlah Halaman Buku\t: 200 halaman\n"},
-        {"Judul Buku\t\t: Being and Time", "Pengarang Buku\t\t: Martin Heidegger", "Jumlah Halaman Buku\t: 500 halaman\n"},
-        {"Judul Buku\t\t: Critique of Pure Reason", "Pengarang Buku\t\t: Immanuel Kant", "Jumlah Halaman Buku\t: 700 halaman\n"},
-        {"Judul Buku\t\t: Thus Spoke Zarathustra", "Pengarang Buku\t\t: Friedrich Nietzsche", "Jumlah Halaman Buku\t: 300 halaman\n"},
-        {"Judul Buku\t\t: The Republic", "Pengarang Buku\t\t: Plato", "Jumlah Halaman Buku\t: 400 halaman\n"}
-    };
-    public String[][] sejarah = {
-        {"Judul Buku\t\t: A People's History of the United States", "Pengarang Buku\t\t: Howard Zinn", "Jumlah Halaman Buku\t: 700 halaman\n"},
-        {"Judul Buku\t\t: Guns, Germs, and Steel: The Fates of Human Societies", "Pengarang Buku\t\t: Jared Diamond", "Jumlah Halaman Buku\t: 500 halaman\n"},
-        {"Judul Buku\t\t: A New History of the World", "Pengarang Buku\t\t: Peter Frankopan", "Jumlah Halaman Buku\t: 600 halaman\n"}, 
-        {"Judul Buku\t\t: A Brief History of Humankind", "Pengarang Buku\t\t: Yuval Noah Harari", "Jumlah Halaman Buku\t: 400 halaman\n"},
-        {"Judul Buku\t\t: The Rise and Fall of the Third Reich: A History of Nazi Germany", "Pengarang Buku\t\t: William L. Shirer", "Jumlah Halaman Buku\t: 1200 halaman\n"}
-    };
-    public String[][] agama = {
-        {"Judul Buku\t\t: The Purpose Driven Life", "Pengarang Buku\t\t: Rick Warren", "Jumlah Halaman Buku\t: 300 halaman\n"},
-        {"Judul Buku\t\t: Jesus Calling: Enjoying Peace in His Presence", "Pengarang Buku\t\t: Sarah Young", "Jumlah Halaman Buku\t: 400 halaman\n"},      
-        {"Judul Buku\t\t: The Power of Now: A Guide to Spiritual Enlightenment", "Pengarang Buku\t\t: Eckhart Tolle", "Jumlah Halaman Buku\t: 250 halaman\n"},      
-        {"Judul Buku\t\t: The Celestine Prophecy", "Pengarang Buku\t\t: James Redfield", "Jumlah Halaman Buku\t: 250 halaman\n"},
-        {"Judul Buku\t\t: The Alchemist", "Pengarang Buku\t\t: Paulo Coelho", "Jumlah Halaman Buku\t: 200 halaman\n"}
-    };
-    public String[][] psikologi = {
-        {"Judul Buku\t\t: Thinking, Fast and Slow", "Pengarang Buku\t\t: Daniel Kahneman", "Jumlah Halaman Buku\t: 500 halaman\n"},
-        {"Judul Buku\t\t: The Psychology of Intelligence", "Pengarang Buku\t\t: Jan Piaget", "Jumlah Halaman Buku\t: 400 halaman\n"},       
-        {"Judul Buku\t\t: The Power of Introverts", "Pengarang Buku\t\t: Susan Cain", "Jumlah Halaman Buku\t: 350 halaman\n"},    
-        {"Judul Buku\t\t: The Psychology of Optimal Experience", "Pengarang Buku\t\t: Mihaly Csikszentmihalyi", "Jumlah Halaman Buku\t: 300 halaman\n"},
-        {"Judul Buku\t\t: The Psychology of Persuasion", "Pengarang Buku\t\t: Robert B. Cialdini", "Jumlah Halaman Buku\t: 300 halaman\n"}
-    };
-    public String[][] politik = {
-        {"Judul Buku\t\t: The Clash of Civilizations and the Remaking of World Order", "Pengarang Buku\t\t: Samuel P. Huntington", "Jumlah Halaman Buku\t: 400 halaman\n"},
-        {"Judul Buku\t\t: Capital in the Twenty-First Century", "Pengarang Buku\t\t: Thomas Piketty", "Jumlah Halaman Buku\t: 700 halaman\n"},     
-        {"Judul Buku\t\t: The Road to Serfdom","Pengarang Buku\t\t: Friedrich Hayek", "Jumlah Halaman Buku\t: 250 halaman\n"},      
-        {"Judul Buku\t\t: The Federalist Papers", "Pengarang Buku\t\t: Alexander Hamilton", "Jumlah Halaman Buku\t: 600 halaman\n"},      
-        {"Judul Buku\t\t: The End of History and the Last Man", "Pengarang Buku\t\t: Francis Fukuyama", "Jumlah Halaman Buku\t: 450 halaman\n"}           
-        };
-    public String[][] fiksi = {
-        {"Judul Buku\t\t: The Lord of the Rings", "Pengarang Buku\t\t: J.R.R. Tolkien", "Jumlah Halaman Buku\t: 1200 halaman\n"},
-       {"Judul Buku\t\t: Brave New World", "Pengarang Buku\t\t: Aldous Huxley", "Jumlah Halaman Buku\t: 300 halaman\n"},      
-       {"Judul Buku\t\t: Harry Potter and the Sorcerer's Stone", "Pengarang Buku\t\t: J.K. Rowling", "Jumlah Halaman Buku\t: 300 halaman\n"},      
-       {"Judul Buku\t\t: The Hunger Games", "Pengarang Buku\t\t: Suzanne Collins", "Jumlah Halaman Buku\t: 400 halaman\n"},
-        {"Judul Buku\t\t: The Hobbit", "Pengarang Buku\t\t: J.R.R. Tolkien", "Jumlah Halaman Buku\t: 300 halaman\n"}
-    };
+    public String[][] teknologi = {};
+    public String[][] filsafat = {};
+    public String[][] sejarah = {};
+    public String[][] agama = {};
+    public String[][] psikologi = {};
+    public String[][] politik = {};
+    public String[][] fiksi = {};
+    
+    public perpus(){
+        teknologi = new String[][]{{"How Artificial Intelligence is Transforming Our World", "Ray Kurzweil", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        {"The Fourth Industrial Revolution", "Klaus Schwab", "240 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."},
+        {"The Singularity is Near: When Humans Transcend Biology", "Tom Fawcett", "500 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        {"What You Need to Know about Data Mining and Data-Analytic Thinking", "Foster Provost", "400 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."},
+        {"How the Technology Behind Bitcoin is Changing Money, Business, and the World", "Don Tapscott", "350 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."}};
+        filsafat = new String[][]{ {"Meditations", "Marcus Aurelius", "200 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."},
+        {"Being and Time", "Martin Heidegger", "500 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"Critique of Pure Reason", "Immanuel Kant", "700 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"Thus Spoke Zarathustra", "Friedrich Nietzsche", "300 halaman,", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."},
+        {"The Republic", "Plato", "400 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}};
+        sejarah = new String[][]{ {"A People's History of the United States", "Howard Zinn", "700 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"Guns, Germs, and Steel: The Fates of Human Societies", "Jared Diamond", "500 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"A New History of the World", "Peter Frankopan", "600 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}, 
+        {"A Brief History of Humankind", "Yuval Noah Harari", "400 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"The Rise and Fall of the Third Reich: A History of Nazi Germany", "William L. Shirer", "1200 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}};
+        agama = new String[][]{{"The Purpose Driven Life", "Rick Warren", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"Jesus Calling: Enjoying Peace in His Presence", "Sarah Young", "400 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},      
+        {"The Power of Now: A Guide to Spiritual Enlightenment", "Eckhart Tolle", "250 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},      
+        {"The Celestine Prophecy", "James Redfield", "250 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"The Alchemist", "Paulo Coelho", "200 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}};
+        psikologi = new String[][]{ {"Thinking, Fast and Slow", "Daniel Kahneman", "500 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"The Psychology of Intelligence", "Jan Piaget", "400 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},       
+        {"The Power of Introverts", "Susan Cain", "350 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},    
+        {"The Psychology of Optimal Experience", "Mihaly Csikszentmihalyi", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"The Psychology of Persuasion", "Robert B. Cialdini", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}};
+        politik = new String[][]{{"The Clash of Civilizations and the Remaking of World Order", "Samuel P. Huntington", "400 halaman\n", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"Capital in the Twenty-First Century", "Thomas Piketty", "700 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},     
+        {"The Road to Serfdom","Friedrich Hayek", "250 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},      
+        {"The Federalist Papers", "Alexander Hamilton", "600 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},      
+        {"The End of History and the Last Man", "Francis Fukuyama", "450 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}      };
+        fiksi = new String[][]{{"The Lord of the Rings", "J.R.R. Tolkien", "1200 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+        {"Brave New World", "Aldous Huxley", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},      
+        {"Harry Potter and the Sorcerer's Stone", "J.K. Rowling", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},      
+        {"The Hunger Games", "Suzanne Collins", "400 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."},
+         {"The Hobbit", "J.R.R. Tolkien", "300 halaman", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore."}};
+
+
+    }
     public String tampilkan = "Jumlah buku di perpustakaan ini adalah 35.";
     public String keluar = "Terima kasih telah berkunjung.";
 
@@ -61,9 +59,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Teknologi\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : teknologi) {
-                        hasilCari += perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: " + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n";
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
                     } 
                 break;
             
@@ -71,9 +71,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Filsafat\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : filsafat) {
-                        hasilCari += perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: " + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n";
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
                     }
             break;
 
@@ -81,9 +83,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Sejarah\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : sejarah) {
-                        hasilCari += perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: " + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n"; 
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
             }
             break;
 
@@ -91,9 +95,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Agama\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : agama) {
-                        hasilCari += perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: " + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n";
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
                     }
             break;
 
@@ -101,9 +107,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Psikologi\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : psikologi) {
-                        hasilCari += perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: " + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n";
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
             }
             break;
 
@@ -111,9 +119,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Politik\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : politik) {
-                        hasilCari += perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: " + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n";
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
                     }
             break;
 
@@ -121,9 +131,11 @@ public class perpus {
                 hasilCari = "Kategori Buku\t: Fiksi\n";
                 hasilCari += "---------------------------------------\n";
                     for (String[] perpus : fiksi) {
-                        hasilCari += "\n" + perpus[0] + "\n";
-                        hasilCari += perpus[1] + "\n";
-                        hasilCari += perpus[2] + "\n\n";
+                        hasilCari += "Judul Buku\t\t: "  + perpus[0] + "\n";
+                        hasilCari += "Nama Penulis\t\t: " + perpus[1] + "\n";
+                        hasilCari += "Jumlah Halaman\t\t: " + perpus[2] + "\n";
+                        hasilCari += "Sinopsis\t\t: " + perpus[3] + "\n";
+                        hasilCari += "Total kata sinopsis\t: " + hitungKata(perpus[3]) + "\n\n";
                     }
             break;
 
@@ -139,5 +151,11 @@ public class perpus {
         }
         return hasilCari;
     }   
+
+    private int hitungKata(String teks) {
+        String[] kataKunci = teks.split("\\s+");
+        return kataKunci.length;
+    }
+    
 }
 
