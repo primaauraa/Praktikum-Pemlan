@@ -1,86 +1,138 @@
-package tokoKue;
+package koperasi;
 
-import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class Main {
+    private static Employee currentEmployee;
     
     public static void main(String[] args) {
-     
-        Kue[] cake = new Kue[20];
-        cake[0] = new KuePesanan("Lapis", 5000, 2);
-        cake[1] = new KuePesanan("Cucur", 30000, 2);
-        cake[2] = new KuePesanan("Putu Ayu", 45000, 3);
-        cake[3] = new KuePesanan("Nastar", 7500, 2);
-        cake[4] = new KuePesanan("Cookies", 40000, 3);
-        cake[5] = new KuePesanan("Brownis", 35000, 2);
-        cake[6] = new KuePesanan("Cheese Cake", 70000, 3);
-        cake[7] = new KuePesanan("Putri Salju", 15000, 4);
-        cake[8] = new KuePesanan("Bika Ambon", 40000, 2);
-        cake[9] = new KuePesanan("Tiramissu", 30000, 2);
-        cake[10] = new KueJadi("Rainbow Cake", 60000, 2);
-        cake[11] = new KueJadi("Almond Cake", 47000, 3);
-        cake[12] = new KueJadi("Chiffon Cake", 65000, 4);
-        cake[13] = new KueJadi("Padan Cake", 25000, 2);
-        cake[14] = new KueJadi("Red Velvet Cake", 26500, 2);
-        cake[15] = new KueJadi("Blueberry Cake", 15000, 2);
-        cake[16] = new KueJadi("Strawbery Cake", 17500, 3);
-        cake[17] = new KueJadi("Lemon Cake", 7000, 2);
-        cake[18] = new KueJadi("Peanut Cake", 38000, 4);
-        cake[19] = new KueJadi("Choco Cookies", 7000, 2);
+        Scanner scanner = new Scanner(System.in);
+        boolean keluar = false;
 
-        DecimalFormat df = new DecimalFormat("#,###.##");
+        while (!keluar) {
+            System.out.println("====================[Koperasi Karyawan]====================");
+            System.out.println("Pilihan Program : ");
+            System.out.println("1. Login");
+            System.out.println("2. Belanja");
+            System.out.println("3. Lihat Detail Belanja");
+            System.out.println("4. Keluar");
+            System.out.print("Masukkan pilihan Anda\t: ");
+            int pilih = scanner.nextInt();
+            scanner.nextLine(); 
 
-        System.out.println("==========Daftar Kue========== ");
-        for (Kue k : cake) {
-            String jenis = (k instanceof KuePesanan) ? "Kue Pesanan" : "Kue Jadi";
-            System.out.println("Nama kue   : " + k.getNama());
-            System.out.println("Harga      : Rp " + df.format(k.hitungHarga()));
-            System.out.println("Jenis Kue  : " + jenis);
-            System.out.println();
-        } 
+            switch (pilih) {
+                case 1:
+                    login(scanner);
+                    break;
+                case 2:
+                    if (currentEmployee == null){
+                        System.out.println("Silahkan login terlebih dahulu.");
+                        System.out.println();
+                    }else {
+                        belanja(scanner);
+                    }
+                    break;
+                case 3:
+                    if (currentEmployee == null){
+                        System.out.println("Silahkan login terlebih dahulu.");
+                        System.out.println();
 
-    double totalHargaSemuaKue = 0;
-    double totalHargaKuePesanan = 0;
-    double totalBeratKuePesanan = 0;
-    double totalHargaKueJadi = 0;
-    double totalJumlahKueJadi = 0;
-    double hargaTertinggi = 0;
-    String jenisKueTertinggi = "";
-    String namaKueTertinggi = "";
-
-    for (Kue k : cake){
-       
-        if (k instanceof KuePesanan){
-            totalHargaKuePesanan += k.hitungHarga();
-            totalBeratKuePesanan += ((KuePesanan) k).getBerat();
-        } else if (k instanceof KueJadi){
-            totalHargaKueJadi += k.hitungHarga();
-            totalJumlahKueJadi += ((KueJadi)k).getJumlah();
-        }
-
-        totalHargaSemuaKue += k.hitungHarga();
-
-        if (k.getHarga() > hargaTertinggi){
-            hargaTertinggi = k.getHarga();
-            namaKueTertinggi = k.getNama();
-            jenisKueTertinggi = (k instanceof KuePesanan)? "Kue Pesanan" : "Kue Jadi";
-        }
-      
+                    }else {
+                        lihatDetailBelanja();
+                    }
+                    break;
+                case 4:
+                    keluar = true;
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid");
+            }
     }
+
+    scanner.close();
+    }
+
+    private static void login(Scanner scanner){
+        System.out.print("Masukkan nama Anda : ");
+        String name = scanner.nextLine();
+        System.out.print("Masukkan nomor registrasi pegawai(maks 10 digit) : ");
+        int registrationNumber = scanner.nextInt();
+        System.out.print("Masukkan jumlah gaji per bulan(maks 10 digit) : ");
+        int salaryPerMonth = scanner.nextInt();
+        scanner.nextLine();
+
+        currentEmployee = new Employee(registrationNumber, name, salaryPerMonth);
+        System.out.println("USERINFO: Successfully logged in!");
+        System.out.println();
     
-    System.out.println("==================[S T A T S]==================");
-     System.out.println("TOTAL HARGA SEMUA KUE\t: Rp " +  df.format(totalHargaSemuaKue));
-     System.out.println();
-     System.out.println("TOTAL HARGA KUE PESANAN\t: Rp " +  df.format(totalHargaKuePesanan));
-     System.out.println("TOTAL BERAT KUE PESANAN\t: " +  df.format(totalBeratKuePesanan) + " gram");
-     System.out.println();
-     System.out.println("TOTAL HARGA KUE JADI\t: Rp " + df.format(totalHargaKueJadi));
-     System.out.println("TOTAL JUMLAH KUE JADI\t: " +  df.format(totalJumlahKueJadi) + " buah");
-     System.out.println();
-     System.out.println("KUE DENGAN HARGA TERTINGGI");
-     System.out.println("Berdasarkan Jenis\t: " + jenisKueTertinggi);
-     System.out.println("Berdasarkan Nama Kue\t: " + namaKueTertinggi);
-    
+    }
+
+    private static void belanja(Scanner scanner){
+        boolean selesaiBelanja = false;
+
+        while (!selesaiBelanja){
+            System.out.println();
+            System.out.println("====================[Koperasi Karyawan]====================");
+            System.out.println("Daftar Produk : ");
+            System.out.println("1. Air Mineral\t\t -- Rp 4,500.00");
+            System.out.println("2. Tinta Spidol\t\t -- Rp 30,500.00");
+            System.out.println("3. Buku Tulis\t\t -- Rp 5,000.00");
+            System.out.println("4. Kabel Data\t\t -- Rp 30,000.00");
+            System.out.println("5. Mouse Gaming\t\t -- Rp 800,000.00");
+            System.out.println("6. Sandal Jepit\t\t -- Rp 790,000.00");
+            System.out.println("7. Gaming Headset\t -- Rp 800,000.00");
+            System.out.println("8. Keyboard laptop\t -- Rp 1,700,000.00");
+            System.out.println("9. Selesai Belanja");
+            System.out.print("Masukkan pilihan produk: ");
+            int productpilih = scanner.nextInt();
+
+            switch (productpilih) {
+                case 1:
+                    currentEmployee.addInvoice(new Invoice("Air Mineral", 1, 4500));
+                    break;
+                    case 2:
+                    currentEmployee.addInvoice(new Invoice("Tinta Spidol", 1, 2500));
+                    break;
+                case 3:
+                    currentEmployee.addInvoice(new Invoice("Buku Tulis", 1, 5000));
+                    break;
+                case 4:
+                    currentEmployee.addInvoice(new Invoice("Kabel Data", 1, 30000));
+                    break;
+                case 5:
+                    currentEmployee.addInvoice(new Invoice("Mouse Gaming", 1, 800000));
+                    break;
+                case 6:
+                    currentEmployee.addInvoice(new Invoice("Sandal Jepit", 1, 790000));
+                    break;
+                case 7:
+                    currentEmployee.addInvoice(new Invoice("Gaming Headset", 1, 800000));
+                    break;
+                case 8:
+                    currentEmployee.addInvoice(new Invoice("Keyboard laptop", 1, 1700000));
+                    break;
+                case 9:
+                    selesaiBelanja = true;
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid.");
+            }
+        }
+    }
+
+    private static void lihatDetailBelanja(){
+        System.out.println("====================[EMPLOYEE STATS]====================\n");
+        System.out.println("Nama\t\t\t : " + currentEmployee.getName());
+        System.out.println("Registration Number\t : " + currentEmployee.getRegistrationNumber());
+        System.out.println("Gaji Awal\t\t : Rp " + String.format("%,d", currentEmployee.getSalaryPerMonth()));
+        System.out.println();
+        System.out.println("Detail Belanja : ");
+        for (Invoice invoice : currentEmployee.getInvoices()) {
+            System.out.println(invoice);
+        }
+        System.out.println("===========================================================");
+        System.out.println("Total Belanja\t\t\tRp " + String.format("%,d", (int) currentEmployee.getTotalInvoicesAmount()));
+        System.out.println("Gaji Akhir\t: Rp " + String.format("%,d", (int) currentEmployee.getPayableAmount()));
+        System.out.println();
     }
 }
-
